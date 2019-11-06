@@ -3,13 +3,9 @@
 /* CSS Document */
 
 h2.start {
-	/*font-size: 1.5em;
-	*/
 	font-family: 'Josefin Slab', serif;
 }
 
 div.welcome {
 	background-image: url('homebackground.jpg');
-	width: auto;
-	height: 100px;
 }
