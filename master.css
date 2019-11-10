@@ -152,4 +152,9 @@ ul.about {
 	text-align-last: center;
 	margin-top: auto;
 }
+
+.button {
+	background-color: #FDB615;
+	font-family: 'Josefin Sans', sans-serif;
+}
 /* CSS Document */
