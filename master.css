@@ -1,5 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+main {
+	margin: 15px 100px 50px 100px;
+}
+
+.search {
+	width: 99%;
+	height: 25%;
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+	outline-color: #40C5E5;
+}
+
 body {
 	background-color: #FFFFFF;
 	font-size: 100%;

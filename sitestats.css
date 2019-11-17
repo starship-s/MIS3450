@@ -2,8 +2,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-grid-template-rows: .2fr repeat(2, 1fr); 
+    grid-template-columns: 50% 50%;
+grid-template-rows: .2fr 50% 50%; 
 text-align: center;
 }
 
@@ -36,4 +36,9 @@ text-align: center;}
 	width: auto;
 	
 	background-color: #A020F0;
+}
+
+.grimg {
+	height: 250px;
+	max-width: 100%;
 }

@@ -1,2 +1,94 @@
-/* CSS Document */
+main {
+	margin: 15px 100px 0px 100px;
+}
 
+a.global:hover {
+ 	background-color: #FDB615;
+}
+
+a.foot:hover {
+	color: #ffffff;
+}
+
+a.forgot {
+	color: #A020F0;
+}
+
+a.forgot:hover {
+	color: #ffffff;
+}
+
+.search {
+	width: 99%;
+	height: 25%;
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+	outline-color: #40C5E5;
+}
+
+div.gridContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+div.login {
+	background-color: #c4c4c4;
+	padding: 45px 50px 10px 50px;
+	margin: 50px 15px 30px 200px;
+	border-radius: 10px;
+}
+
+.login h1 {
+	background-color: #a1a1a1;
+	color: #ffffff;
+	padding: 6px;
+}
+
+.login p {
+	font-family: 'Roboto';
+	font-size: 0.8em;
+}
+
+div.register {
+	background-color: #c4c4c4;
+	padding: 15px 50px 10px 50px;
+	margin: 50px 200px 30px 15px;
+	border-radius: 10px;
+}
+
+.register h1 {
+	background-color: #a1a1a1;
+	color: #ffffff;
+	padding: 6px;
+}
+
+form {
+	padding: 3px;
+	line-height: 2.5;
+}
+
+input {
+	padding: 3px;
+}
+
+input:focus {
+  border: 1px solid #40C5E5;
+}
+
+input[type=submit] {
+	background-color: #FDB615;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	color: #000000;
+	padding: 5px;
+	text-decoration: none;
+}
+
+span {
+	font-weight: 700;
+}
+
+.fparent {
+	margin: 40px 0px 0px 0px;
+}

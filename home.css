@@ -1,11 +1,179 @@
 @charset "utf-8";
 
-/* CSS Document */
-
-h2.start {
-	font-family: 'Josefin Slab', serif;
+main {
+	margin: 15px 100px 50px 100px;
 }
 
 div.welcome {
-	background-image: url('homebackground.jpg');
+	position: relative;
+	text-align: center;
+	width: inherit;
+}
+
+.welcome img {
+	height: 400px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+	width: 99%;
+	height: 25%;
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+	outline-color: #40C5E5;
+}
+
+
+a.global:hover {
+ 	background-color: #FDB615;
+}
+
+a.about {
+	color: #0489A8;
+}
+
+a.continue {
+	color: #40C5E5; 
+}
+
+a.continue:hover {
+	color: #FDB615;
+}
+
+a.foot:hover {
+	color: #ffffff;
+}
+
+li {
+	line-height: 2;
+	padding: 0px;
+}
+
+li a.about { 
+	color: #40C5E5;
+	font-family: inherit;
+	font-size: inherit;
+	display: inline; 
+	padding: 0px;
+}
+
+li a.about:hover {
+	color: #FDB615;
+}
+
+h1 {
+	background: rgba(64, 196, 229, 0.6);
+	color: #ffffff;
+	padding: 15px;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	font-size: 3em;
+}
+
+h2.start {
+	font-family: 'Josefin Slab', serif;
+	text-align: center;
+}
+
+ul.about {
+	padding: 0px 0px 25px 0px;
+}
+
+div.gridContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row-end: 2;
+}
+
+div.noGray {
+	background-color: #ffffff;
+	padding: none;
+	margin: auto;
+}
+
+div.LeftDiv {
+	background-color: #707071;
+	padding: 0px 20px 5px 20px;
+	margin: -5px 25px 25px 0px;
+}
+
+.LeftDiv h2 {
+	text-align: center;
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+.LeftDiv h3 {
+	color: #0489A8;
+	margin-bottom: -20px;
+}
+
+div.topPosts1, div.topPosts2, div.topPosts3 {
+	background-color: #ffffff;
+	margin: 15px 0px 15px 0px;
+}
+
+.topPosts1 h3, p {
+	padding: 7px;
+}
+
+.topPosts2 h3, p {
+	padding: 7px;
+}
+
+.topPosts3 h3, p {
+	padding: 7px;
+}
+
+div.RightDiv {
+	background-color: #707071;
+	padding: 15px 20px 5px 20px;
+	margin: -5px 0px 25px 25px;
+}
+
+textarea {
+	width: 98%;
+	height: 425px;
+	outline-color: #40C5E5;
+}
+
+.RightDiv h2 {
+	text-align: center;
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+button {
+	display: block;
+	margin: auto;
+	border: 0.5px solid #ffffff;
+	border-radius: 5px;
+	color: #000000;
+	background-color: #FDB615;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+input:focus {
+  border: 1px solid #40C5E5;
+}
+
+span {
+	font-weight: 700;
+}
+
+
+div.fparent {
+	margin: 15px 0px 0px 0px;
 }
