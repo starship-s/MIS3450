@@ -5,7 +5,12 @@
 	<title>WriterWorkshop - Works</title>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
 	<link href="master.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8yBSJzWvDaP5BohIZiH5eL1TTPJS6Nw0xLjI1RmNRiDv1J2DTXz1qQHmSuzBbJDmvx9ob9g-3SDg9QNuA0olIEhrtHJIGS80W_XOO6p8VT-CENT89GhmAenJ6DKNoMP_zmwDKWQ_kBDQ6YkyU7sKNBxmJmsAZXpG1qA7DR3F4UMFFjrOKcdxsWpAhuyWwmWpmkTxHAq3maRZc3PzDpQJvhvRZuX0gltZQ0NdzAgMOMfBsNREy9inhnVfS5xvW9Yy_iUVurXT6-ZEhv7TOkLj994kWBDmaTLwyUE-JhIJHxoBFVYTyxnA1h_mO8w3LXyUnmSjDwyn1WzuoT9e6EUQp9II3xm1UBzNx631XqPq5GCpv7kCGUZ8Z2a7r3-Sb9NO" charset="UTF-8"></script><style>
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+	<!-- Include the Quill library -->
+	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+	<!-- Initialize Quill editor -->
+	<style>
 		h2 {
 		text-align: center;
 		}
@@ -38,8 +43,22 @@
 	<main>
 		<div>
 			<h2>Submit a Post</h2>
-			<form>
-				<textarea rows="10" cols="50">Type your story here...</textarea>
+
+
+				<!-- Create the editor container -->
+				<div id="editor">
+				  <p>Hello World!</p>
+				  <p>Some initial <strong>bold</strong> text</p>
+				  <p><br></p>
+				</div>
+
+				<!-- Initialize Quill editor -->
+				<script>
+				  var quill = new Quill('#editor', {
+					theme: 'snow'
+				  });
+				</script>
+						<form>
 				<p>
 					<input type="radio" name="type" value="prose">Prose<br>
 					<input type="radio" name="type" value="poetry">Poetry<br>
