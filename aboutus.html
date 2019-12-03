@@ -5,68 +5,113 @@
 <title>WriterWorkshop - About Us</title>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
 <link href="master.css" rel="stylesheet" type="text/css">
-<link href="aboutus.html" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XXSBYIKGkiMlFgxxCU6BjfqNUe2jyn9FUfW8dY6TrKbPfvr5Pn_hHPJOPE3hO6bz2farnHPETj7TtXSOv4sj1DzlKJmnkl2Tj_3-2eA63yov4cbg8ffpbtsyfgW5erzg7hWe0R7-GlpAe1lPl7HtjBMB0-LuHnt2MNffntFigMgm1e4CAVRfiAE8537RE-ugG6UpJG5u1jXWDr4xmEOmNvNnb5-dj9KcVIk4kzfVaPcrMRYARy01T3bUecjnIVoIg8oZhKNb5Yrk_pjgFyGnqjC3gELiRY9noaLnz4qOaMc3K-Ub9FBk27koNwOBVDadi-iEpohVpC7zO1tpO_3ZJWE4EAIsg2DUgPFGgrNBkfu4j5JtewELCVisuFbzSvdx" charset="UTF-8"></script><style>
+	img.center{
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	p.border {
+		border: 4px solid;
+		border-color: #707071;
+		padding: 20px 20px 20px 20px;
+	}
+
+	div.LeftDiv {
+		border: 4px solid;
+		border-color: #707071;
+		padding: 0px 20px 5px 20px;
+		margin: -5px 25px 25px 0px;
+	}
+
+	div.RightDiv {
+		border: 4px solid;
+		border-color: #707071;
+		padding: 0px 20px 5px 20px;
+		margin: -5px 0px 25px 25px;
+	}
+
+	div.gridContainer {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-row-end: 2;
+	}
+
+	textarea {
+		width: 100%;
+		height: 100%;
+	}
+
+	button.body {
+		background-color: 	#fdb615;;
+	}
+
+	span {
+		font-weight: 700;
+	}
+</style>
 </head>
 <body>
-<header>
-  <nav>
-    <div class="parent">
-      <div class="div1" ><img src="logo.png" alt="WriterWorkshop Logo" width=100%></div>
-      <div class="div2"><ul class="login"><li><a href="login.html">Login</a></li></ul></div>
-		<div class="div3"><ul><li><a href="home.html">Home</a></li></ul></div>
-        <div class="div4"><ul><li><a href="aboutus.html">About Us</a></li></ul></div>
-		<div class="div5"><ul><li><a href="forum.html">Forum</a></li></ul></div>
-		<div class="div6"><ul><li><a href="works.html">Works</a></li></ul></div>
-		<div class="div7"><ul><li><a href="myaccount.html">My Account</a></li></ul></div>
-      <div class="div8">
-        <input type="text" placeholder="Search" size=105%>
-      </div>
-	</div>
-  </nav>
-</header>
+	<header>
+		<nav>
+			<div class="parent">
+				<div class="div1" ><img src="logo.png" alt="WriterWorkshop Logo" width=100%></div>
+				<div class="div2"><ul class="login"><li><a href="login.html">Login</a></li></ul></div>
+				<div class="div3"><ul><li><a href="home.html" class='global'>Home</a></li></ul></div>
+				<div class="div4"><ul><li><a href="aboutus.html" class="global">About Us</a></li></ul></div>
+				<div class="div5"><ul><li><a href="forum.html" class='global'>Forum</a></li></ul></div>
+				<div class="div6"><ul><li><a href="works.html" class='global'>Works</a></li></ul></div>
+				<div class="div7"><ul><li><a href="myaccount.html" class='global'>My Account</a></li></ul></div>
+				<div class="div8"><input type="text" placeholder="Search" class="search"></div>
+			</div>
+		</nav>
+	</header>
 	<main>
 		<div>
-			<p><img src="https://neverboss.com/wp-content/uploads/2017/06/priacta-happy-team-PeopleImages.com-ID10017-1920x1080-1024x576.jpg"></p>
-			<p><img src="logo.png" width="500"></p>
+			<p><img class="center" src="https://neverboss.com/wp-content/uploads/2017/06/priacta-happy-team-PeopleImages.com-ID10017-1920x1080-1024x576.jpg"></p>
 		</div>
 		<div>
-			<p>Welcome to WriterWorkshop, your number one source for writing advice. We're dedicated to providing you the very best community, with an emphasis on creativity, honesty, and openness.</p>
-			<p>Founded in 2019 by the MIS3450 Team, WriterWorkshop has come a long way from its beginnings at USU. When the MIS3450 Team first started out, their passion for completing their MIS program drove them to make their own website.</p>
-			<p>We hope you enjoy our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
-			<p>Sincerely,</p>
-			<p>The MIS3450 Team</p>
+			<p class="border">Welcome to WriterWorkshop, your number one source for writing advice. We're dedicated to providing you the very best community, with an emphasis on creativity, honesty, and openness.
+			<br>Founded in 2019 by the MIS3450 Team, WriterWorkshop has come a long way from its beginnings at USU. When the MIS3450 Team first started out, their passion for completing their MIS program drove them to make their own website.
+			<br>We hope you enjoy our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+			<br><br>Sincerely,
+			<br>The MIS3450 Team</p>
 		</div>
-		<div class="LeftDiv">
-			<h3>User Testimonials</h3>
-			<p>“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. It’s really great how easy your stories are to update and manage. I never have any problem at all.”</p>
-			<p>“Now it’s almost like having a editor right here with me. I just write the story, choose the category and get feedback. It’s so simple.”</p>
-			<p>“Wow. I just uploaded my story and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”</p>
-		</div>
-		<div class="RightDiv">
-			<h3>Contact Us</h3>
-			<form>
-				<textarea>Leave a comment, concern or feedback here to contact the team!</textarea>
-				<button>SUBMIT</button>
-			</form>
+		<div class="gridContainer">
+			<div class="LeftDiv">
+				<h3>User Testimonials</h3>
+				<p>“I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. It’s really great how easy your stories are to update and manage. I never have any problem at all.”</p>
+				<p>“Now it’s almost like having a editor right here with me. I just write the story, choose the category and get feedback. It’s so simple.”</p>
+				<p>“Wow. I just uploaded my story and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”</p>
+			</div>
+			<div class="RightDiv">
+				<h3>Contact Us</h3>
+				<form>
+					<textarea rows="8">Leave a comment, your concerns or some feedback here to contact the team!</textarea>
+					<br>
+					<button class="body">Submit</button>
+				</form>
+			</div>
 		</div>
 	</main>
-<footer>
-  <fdiv class="fparent">
-<fdiv class="fdiv1">STAY CONNECTED</fdiv>
-<fdiv class="fdiv2">COMMITTED TO YOU</fdiv>
-<fdiv class="fdiv3">NAVIGATE</fdiv>
-<fdiv class="fdiv4">Join the WriterWorkshop tip list to recieve bi-weekly writing tips.</fdiv>
-<fdiv class="fdiv5">WriterWorkshop is a proud member of the Portland community and is dedicated to excellence not only in writing, but in life.</fdiv>
-<fdiv class="fdiv6"><a href="works.html">Works</a></fdiv>
-		<fdiv class="fdiv7"><a href="newworks.html">New Work</a></fdiv>
-		<fdiv class="fdiv8"><a href="posthistory.html">Credibility Score</a></fdiv>
-		<fdiv class="fdiv9"><a href=login.html>Login / Sign Up</a></fdiv>
-<fdiv class="fdiv10"><form><input type="text" placeholder="Email Address"><input type="button" style="background-color:#FDB615;" value="Sign Up"></input></form></fdiv>
-	<fdiv class="fdiv11"><a href=login.html>MORE ABOUT WRITER WORKSHOP</a></fdiv>
-<fdiv class="fdiv12"><a href="myaccount.html">My Account</a></fdiv>
-<fdiv class="fdiv13"><a href="forum.html">Forum</a></fdiv>
-<fdiv class="fdiv14">&copy;2019 WriterWorkshop Studios - 4012 Steelbend Avenue, Suite 712, Portland, Oregon 76565</fdiv>
-</fdiv>
-</footer>
+	<footer>
+		<fdiv class="fparent">
+			<fdiv class="fdiv1"><span>STAY CONNECTED</span></fdiv>
+			<fdiv class="fdiv2"><span>COMMITTED TO YOU</span></fdiv>
+			<fdiv class="fdiv3"><span>NAVIGATE</span></fdiv>
+			<fdiv class="fdiv4">Join the WriterWorkshop tip list to receive bi-weekly writing tips.</fdiv>
+			<fdiv class="fdiv5">WriterWorkshop is a proud member of the creative community and is dedicated to excellence not only in writing, but in life.</fdiv>
+			<fdiv class="fdiv6"><a href="works.html" class="foot">Works</a></fdiv>
+			<fdiv class="fdiv7"><a href="newworks.html" class="foot">New Work</a></fdiv>
+			<fdiv class="fdiv8"><a href="posthistory.html" class="foot">Credibility Score</a></fdiv>
+			<fdiv class="fdiv9"><a href=login.html class="foot">Login / Sign Up</a></fdiv>
+			<fdiv class="fdiv10"><form><input type="text" placeholder="Email Address"><input type="button" style="background-color:#FDB615;" value="Sign Up"></input></form></fdiv>
+			<fdiv class="fdiv11"><a href="aboutus.html" class="foot">LEARN MORE</a></fdiv>
+			<fdiv class="fdiv12"><a href="myaccount.html" class="foot">My Account</a></fdiv>
+			<fdiv class="fdiv13"><a href="forum.html" class="foot">Forum</a></fdiv>
+			<fdiv class="fdiv14">&copy;2019 WriterWorkshop Studios</fdiv>
+		</fdiv>
+	</footer>
 </body>
 </html>
