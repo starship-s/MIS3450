@@ -123,6 +123,31 @@
 			font-weight: 700;
 		}
 	</style>
+	<script>
+		var cred1score = 89
+		var cred2score = 59
+		var cred3score = 67
+		
+		function updatecred(id, value, score){
+			percent = id+"percent"
+			if (id == "cred1") {
+				var credscore = cred1score
+			}
+			else if (id == "cred2") {
+				var credscore = cred2score
+			}
+			else if (id == "cred3") {
+				var credscore = cred3score
+			}
+			console.log(credscore)
+			if (value == "credible") {
+				document.getElementById(percent).innerHTML = credscore + 10
+			}
+			else if (value != "credible") {
+				document.getElementById(percent).innerHTML = credscore - 10
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -155,8 +180,9 @@
 							<p>Posted by <a href class="user">Jimmy Franklin</a> on October 22, 2019</p>
 						</div>
 						<div class="credibility">
-							<p><span>89%</span> credible. Do you agree?					
-								<select>
+							<p><span id="cred1percent">89</span>% credible. Do you agree?					
+								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred1">
+									<option value="select">Vote</option>
 								  <option value="credible">Credible</option>
 								  <option value="noncredible">Not Credible</option>
 								</select>
@@ -173,8 +199,9 @@
 							<p>Posted by <a href class="user">Octavio Billie</a> on October 23, 2019</p>
 						</div>
 						<div class="credibility">
-							<p><span>59%</span> credible. Do you agree?					
-								<select>
+							<p><span id="cred2percent">59</span>% credible. Do you agree?					
+								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred2">
+									<option value="select">Vote</option>
 								  <option value="credible">Credible</option>
 								  <option value="noncredible">Not Credible</option>
 								</select>
@@ -191,8 +218,9 @@
 							<p>Posted by <a href class="user">Jillian Jackson</a> on October 23, 2019</p>
 						</div>
 						<div class="credibility">
-							<p><span>67%</span> credible. Do you agree?					
-								<select>
+							<p><span id="cred3percent">67</span>% credible. Do you agree?					
+								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred3">
+									<option value="select">Vote</option>
 								  <option value="credible">Credible</option>
 								  <option value="noncredible">Not Credible</option>
 								</select>
