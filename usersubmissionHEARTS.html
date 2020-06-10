@@ -5,7 +5,7 @@
 	<title>WriterWorkshop - Viewing Post</title>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
 	<link href="master.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=k9LIfUhSAubseQdgJBOlWb2CXkMwjROqIM7CRK9Mf1xmKyC9m2_9a5Ka8bTch-ShycKtt4ipj5_GEQrY6d75XQS4_r2GTjJL48i5ELqo13TcgW3ygCy86MwY30LcHFXTwktcqs0uPz3TSjqKiX-qNcONtfuqgFT6phJaf00eZvsbnDomwi7tzQqNKX_afI2BbSlU6zpkWMAP3Z-AUtBI2tJNA8Q6hyboIBJJHbM3bJZv787LHCINUmwMCTIKvA_j8DvPFeAIhiKaplau5dUe0cW1uvHapc-72txC1RMfLkl1ps-njM0s3QoEVjrkHN_2G2rOQ5as6MSgu30RpHR20ZgoFkiYywG4JcLwMVDfmTzQHr6kuX6b7uNGznvelVkT" charset="UTF-8"></script><style>
+	<style>
 		a.user {
 			color: #0489A8;
 		}
@@ -123,10 +123,10 @@
 			font-weight: 700;
 		}
 	</style>
-	<script>
-		var cred1score = 89
-		var cred2score = 59
-		var cred3score = 67
+		<script>
+		var cred1score = 45
+		var cred2score = 82
+		var cred3score = 76
 		
 		function updatecred(id, value, score){
 			percent = id+"percent"
@@ -143,8 +143,11 @@
 			if (value == "credible") {
 				document.getElementById(percent).innerHTML = credscore + 10
 			}
-			else if (value != "credible") {
+			else if (value == "noncredible") {
 				document.getElementById(percent).innerHTML = credscore - 10
+			}
+			else if (value == "select") {
+				document.getElementById(percent).innerHTML = credscore
 			}
 		}
 	</script>
@@ -166,21 +169,34 @@
 	</header>
 		<main>
 			<div class="post">
-				<h3>The Mice</h3>
-				<h4>Posted by <a href class="user">Lydia Davis</a> on October 22, 2019</h4>
-				<p>Mice live in our walls but do not trouble our kitchen. We are pleased but cannot understand why they do not come into our kitchen where we have traps set, as they come into the kitchens of our neighbors. Although we are pleased, we are also upset, because the mice behave as though there were something wrong with our kitchen. What makes this even more puzzling is that our house is much less tidy than the houses of our neighbors. There is more food lying about in our kitchen, more crumbs on the counters and filthy scraps of onion kicked against the base of the cabinets. In fact, there is so much loose food in the kitchen I can only think the mice themselves are defeated by it. In a tidy kitchen, it is a challenge for them to find enough food night after night to survive until spring. They patiently hunt and nibble hour after hour until they are satisfied. In our kitchen, however, they are faced with something so out of proportion to their experience that they cannot deal with it. They might venture out a few steps, but soon the overwhelming sights and smells drive them back into their holes, uncomfortable and embarrassed at not being able to scavenge as they should.</p>
+				<h3>Broken Hearts Poem</h3>
+				<h4>Posted by <a href class="user">Octavio Billie</a> on October 15, 2019</h4>
+				<p>Alas, I stand small as the world crashes down,<br>
+				I cry with anguish as my heart bleeds red,<br>
+				Distance is pain and in darkness I drown,<br>
+				There is so much sorrow, it can't all be said.<br>
+				<br>
+				The weather is stormy and cold,<br>
+				I cannot stand the depths of this night.<br>
+				Wishing for new instead of same old,<br>
+				But real change isn't worth the fight.
+				<br>
+				<br>
+				<br>
+				<i>This is what I have so far... what do you guys think?</i>
+				</p>
 			</div>
 			<div class="comments">
 				<div class="comment1">
 					<div class="content">
-						<p>Great story!  Your writing style is really coming along well!</p>
+						<p>So depressing :(</p>
 					</div>
 					<div class="gridContainer">
 						<div class="user">
-							<p>Posted by <a href class="user">Jimmy Franklin</a> on October 22, 2019</p>
+							<p>Posted by <a href class="user">Jimmy Franklin</a> on October 16, 2019</p>
 						</div>
 						<div class="credibility">
-							<p><span id="cred1percent">89</span>% credible. Do you agree?					
+							<p><span id="cred1percent">45</span>% credible. Do you agree?					
 								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred1">
 									<option value="select">Vote</option>
 								  <option value="credible">Credible</option>
@@ -192,14 +208,14 @@
 				</div>
 				<div class="comment2">
 					<div class="content">
-						<p>Made me chuckle!</p>
+						<p>Good start - I hope you expand this poem!</p>
 					</div>
 					<div class="gridContainer">
 						<div class="user">
-							<p>Posted by <a href class="user">Octavio Billie</a> on October 23, 2019</p>
+							<p>Posted by <a href class="user">Lydia Davis</a> on October 18, 2019</p>
 						</div>
 						<div class="credibility">
-							<p><span id="cred2percent">59</span>% credible. Do you agree?					
+							<p><span id="cred2percent">82</span>% credible. Do you agree?					
 								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred2">
 									<option value="select">Vote</option>
 								  <option value="credible">Credible</option>
@@ -211,14 +227,14 @@
 				</div>
 				<div class="comment3">
 					<div class="content">
-						<p>Makes me feel sorry for the poor mice.</p>
+						<p>Heartbreak sucks.</p>
 					</div>
 					<div class="gridContainer">
 						<div class="user">
 							<p>Posted by <a href class="user">Jillian Jackson</a> on October 23, 2019</p>
 						</div>
 						<div class="credibility">
-							<p><span id="cred3percent">67</span>% credible. Do you agree?					
+							<p><span id="cred3percent">76</span>% credible. Do you agree?					
 								<select onchange="updatecred(this.id, this.value, this.id+'score')" id="cred3">
 									<option value="select">Vote</option>
 								  <option value="credible">Credible</option>

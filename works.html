@@ -5,8 +5,46 @@
 	<title>WriterWorkshop - Works</title>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Lusitana|Roboto&display=swap" rel="stylesheet">
 	<link href="master.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FesTP7evgoZ9uo1HaIW1ZYXePQ1zY_DUQcSXrlXdBUS755BEZjRWK1qt3CD2qb54cQiw1kYRqLT0KGxwI4mXAE6ASe5d9s027xVv_G-dfY_wSRPgfCPz7KXQjyyjlArzq6Lacl8hHx2liflpLDtIzsAtiabeazo_HjqBLsbMGdnb4GCkxV7D5yfUqoBQ22G0iWbNwwDvqKAvETuKnOgOqYb7UAEuoBsx5Qk2q65zLEMa8bO17jjCC61BHlgsNNZkeCcQd83cGQ78S7lH6TtCBKehC3xWVk0m_tEeiJyQCxTRSgTZFZIJ_xRWp0XQvWTMpcCmeQBl-hIMpAwBsz3_Y_osX5LcgikEx7Qg4IvtwTmDywSzpa0G_ZZSXShkV5-6" charset="UTF-8"></script><script src="jQueryAssets/SpryDOMUtils.js"></script>
-	<script src="works.js"></script>
+	<script src="jQueryAssets/SpryDOMUtils.js"></script>
+	<script>function openGenre(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} </script>
 		<style>
 			/* Style the tab */
 			.tab {
@@ -144,7 +182,7 @@
 	<th>User Views</th>
   </tr>
   <tr>
-    <td><a href="usersubmission.html">HOW TO GET BACK TO THE FOREST</a></td>
+    <td><a href="usersubmissionMICE.html">HOW TO GET BACK TO THE FOREST</a></td>
     <td><span> by SOFIA SAMATAR</span></td>
 	<td>Prose</td>
 	<td>10/31/2019</td>
@@ -159,7 +197,7 @@
 	<td>246</td>
   </tr>
   <tr>
-    <td><a href="usersubmission.html">A COLLAPSE OF HORSES</a></td>
+    <td><a href="usersubmissionMICE.html">A COLLAPSE OF HORSES</a></td>
     <td><span> by BRIAN EVENSON</span></td>
 	<td>Prose</td>
 	<td>09/30/2019</td>
@@ -173,7 +211,7 @@
 	<td>2,109</td>
   </tr>
 	  <tr>
-    <td><a href="usersubmission.html">Omens</a></td>
+    <td><a href="usersubmissionMICE.html">Omens</a></td>
     <td><span> by Cecelia Llompart</span></td>
 	<td>Poetry</td>
 	<td>07/24/2019</td>
@@ -200,7 +238,7 @@
 	  
   </tr>
   <tr>
-    <td><a href="usersubmission.html">The City Born Great</a></td>
+    <td><a href="usersubmissionHEARTS.html">The City Born Great</a></td>
     <td><span> by N.K. Jemisin</span></td>
 	<td>Prose</td>
 	<td>06/16/2019</td>
@@ -214,21 +252,21 @@
 	<td>1049</td>
   </tr>
 	  <tr>
-    <td><a href="usersubmission.html">The Ballad Of The Harp Weaver</a></td>
+    <td><a href="usersubmissionMOM.html">The Ballad Of The Harp Weaver</a></td>
     <td><span> by Edna St. Vincent Millay</span></td>
 	<td>Poetry</td>
 	<td>03/29/2019</td>
 	<td>298</td>
   </tr>
 	  <tr>
-    <td><a href="usersubmissionDOG.html">Paul Bunyan</a></td>
+    <td><a href="usersubmissionHEARTS.html">Paul Bunyan</a></td>
     <td><span> by Shel Silverstein</span></td>
 	<td>Poetry</td>
 	<td>09/26/2019</td>
 	<td>432</td>
   </tr>
 	  <tr>
-    <td><a href="usersubmission.html">Dreams</a></td>
+    <td><a href="usersubmissionMICE.html">Dreams</a></td>
     <td><span> by Jane A Beresford</span></td>
 	<td>Poetry</td>
 	<td>10/16/2019</td>
@@ -247,7 +285,7 @@
 	<th>User Views</th>
   </tr>
   <tr>
-    <td><a href="usersubmissionDOG.html">Greenhorns</a></td>
+    <td><a href="usersubmissionMOM.html">Greenhorns</a></td>
     <td><span> by Richard Slotkin</span></td>
 	<td>Prose</td>
 	<td>09/17/2019</td>
@@ -262,14 +300,14 @@
 	<td>543</td>
   </tr>
   <tr>
-    <td><a href="usersubmission.html">Scenes from the Heartland: Stories Based on Lithographs by Thomas Hart Benton</a></td>
+    <td><a href="usersubmissionMICE.html">Scenes from the Heartland: Stories Based on Lithographs by Thomas Hart Benton</a></td>
     <td><span> by Donna Baier Stein</span></td>
 	<td>Prose</td>
 	<td>11/04/2019</td>
 	<td>42</td>
   </tr>
 	  <tr>
-    <td><a href="usersubmissionDOG.html">Pneumonic Poem to remember Henry the Eighth’s wives</a></td>
+    <td><a href="usersubmissionMOM.html">Pneumonic Poem to remember Henry the Eighth’s wives</a></td>
     <td><span> by Sathyam-Drew</span></td>
 	<td>Poetry</td>
 	<td>08/13/2019</td>
@@ -283,7 +321,7 @@
 	<td>965</td>
   </tr>
 	  <tr>
-    <td><a href="usersubmissionDOG.html">MOTHER AFRICA</a></td>
+    <td><a href="usersubmissionHEARTS.html">MOTHER AFRICA</a></td>
     <td><span> by TAMBE MANSFIELD AGBOR</span></td>
 	<td>Poetry</td>
 	<td>09/18/2019</td>
